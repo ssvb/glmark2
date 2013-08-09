@@ -36,6 +36,8 @@
 
 #if GLMARK2_USE_X11
 #include "native-state-x11.h"
+#elif GLMARK2_USE_FB
+#include "native-state-fb.h"
 #elif GLMARK2_USE_DRM
 #include "native-state-drm.h"
 #elif GLMARK2_USE_MIR
@@ -162,6 +164,8 @@ main(int argc, char *argv[])
     // Create the canvas
 #if GLMARK2_USE_X11
     NativeStateX11 native_state;
+#elif GLMARK2_USE_FB
+    NativeStateFB native_state;
 #elif GLMARK2_USE_DRM
     NativeStateDRM native_state;
 #elif GLMARK2_USE_MIR

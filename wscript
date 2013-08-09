@@ -14,6 +14,7 @@ APPNAME = 'glmark2'
 FLAVORS = {
     'x11-gl' : 'glmark2',
     'x11-glesv2' : 'glmark2-es2',
+    'fb-glesv2' : 'glmark2-es2-fb',
     'drm-gl' : 'glmark2-drm',
     'drm-glesv2' : 'glmark2-es2-drm',
     'mir-gl' : 'glmark2-mir',
