@@ -17,6 +17,8 @@
 #include "gl-if.h"
 #include "program.h"
 
+typedef char GLchar;
+
 using std::string;
 using LibMatrix::mat4;
 using LibMatrix::mat3;
